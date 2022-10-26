@@ -7,7 +7,7 @@ const nuevaString = "Variable STRING"
 const nuevoNum = 20;
 
 // Crea una variable booleana:
-const nuevoBool = TRUE;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -150,13 +150,13 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.round(num+1);
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.floor(Math.random()*100);
+  return Math.random();
 
 }
 
@@ -191,7 +191,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "Hola "+nombre;
+  return "Hola "+nombre+"!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -232,7 +232,7 @@ function esVocal(letra){
   if(letra.length != 1)
     return "Dato incorrecto";
   else if (letra === 'a' || letra === 'e' ||letra === 'i' || letra === 'o' || letra === 'u' )
-    return "Es  vocal";
+    return "Es vocal";
   else return "Dato incorrecto";
 }
 
